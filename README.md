@@ -8,6 +8,10 @@ yang dapat menyebabkan perubahan pada konten atau perilaku aplikasi. Dalam kasus
 peretas dapat melakukan serangan SQL Injection untuk mengkompromikan server utamanya 
 atau infrastruktur back-end lainnya, atau melakukan serangan denial of service.
 
+#Eksperimen sederhana Sql Inejction#
+
+Dalam kasus ini saya mengambil contoh metode Blind Sql Ijection  
+
 1. Tampilan merupakan Struktur databasenya
 !<img width="1920" height="1200" alt="Screenshot 2025-05-03 132802" src="https://github.com/user-attachments/assets/69ed2668-0483-4ac0-aa8e-850bdd0b36db" />
 
