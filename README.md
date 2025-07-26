@@ -1,18 +1,13 @@
 # Mengenal SQL Injection : Cara Kerja, Dampak, dan Cara Pencegahannya #
 Apa itu Sql Injection?
 #
-SQL Injection adalah kerentanan paca web yang memungkinkan peretas untuk mengganggu 
-query database dalam sistem. Serangan ini biasanya digunakan untuk mengambil isi dari 
-database sistem. Dalam beberapa kasus, penyerang dapat mengubah atau menghapus data ini, 
-yang dapat menyebabkan perubahan pada konten atau perilaku aplikasi. Dalam kasus lain juga, 
-peretas dapat melakukan serangan SQL Injection untuk mengkompromikan server utamanya 
-atau infrastruktur back-end lainnya, atau melakukan serangan denial of service.
+SQL Injection adalah kerentanan paca web yang memungkinkan peretas untuk mengganggu query database dalam sistem. Serangan ini biasanya digunakan untuk mengambil isi dari database sistem. Dalam beberapa kasus, penyerang dapat mengubah atau menghapus data ini, yang dapat menyebabkan perubahan pada konten atau perilaku aplikasi. Dalam kasus lain juga, peretas dapat melakukan serangan SQL Injection untuk mengkompromikan server utamanya atau infrastruktur back-end lainnya, atau melakukan serangan denial ofservice.
 
 # Eksperimen sederhana Sql Inejction #
 
 Dalam kasus ini saya mengambil contoh metode Blind Sql Ijection
 1. Membuat contoh website from login sederhana 
-  !<img width="515" height="499" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/0fcea85e-0823-4627-8f23-6f0e111101ad" />
+  !<img width="250" height="200" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/0fcea85e-0823-4627-8f23-6f0e111101ad" />
 2. Tampilan merupakan Struktur databasenya
   !<img width="1920" height="1200" alt="Screenshot 2025-05-03 132802" src="https://github.com/user-attachments/assets/69ed2668-0483-4ac0-aa8e-850bdd0b36db" />
 3. Coba login dengan username dan password yang salah maka dashbord nya akan menampilkan output seperti ini
