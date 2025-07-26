@@ -12,7 +12,7 @@ atau infrastruktur back-end lainnya, atau melakukan serangan denial of service.
 
 Dalam kasus ini saya mengambil contoh metode Blind Sql Ijection
 1. Membuat contoh website from login sederhana 
-  
+  !<img width="515" height="499" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/0fcea85e-0823-4627-8f23-6f0e111101ad" />
 2. Tampilan merupakan Struktur databasenya
   !<img width="1920" height="1200" alt="Screenshot 2025-05-03 132802" src="https://github.com/user-attachments/assets/69ed2668-0483-4ac0-aa8e-850bdd0b36db" />
 3. Coba login dengan username dan password yang salah maka dashbord nya akan menampilkan output seperti ini
