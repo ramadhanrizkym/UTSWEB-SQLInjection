@@ -13,12 +13,27 @@ Dalam kasus ini saya mengambil contoh metode Blind Sql Ijection
 3. Coba login dengan username dan password yang salah maka dashbord nya akan menampilkan output seperti ini
   <img width="400" height="300" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/42638dd5-ce05-43bc-91c7-c5d49110f408" />
   <img width="526" height="269" alt="Screenshot 2025-05-03 134640" src="https://github.com/user-attachments/assets/175fd0f5-5a96-4e88-aea6-49d784425588" />
+
 4. Coba login biasa dan masukan username dan password nya yang sesuai dengan yang ada di database maka tampilan dashbord nya akan seperti ini 
-   <p align="left"><img width="400" height="300" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/48149b65-5d00-419d-9bd4-50fee742361d" /></p><img width="526" height="269" alt="Screenshot 2025-05-03 133618" src="https://github.com/user-attachments/assets/d8479596-2923-4eda-8bee-bcaa786ae9e9" /></p>
+   <p align="left"><img width="400" height="300" alt="Screenshot 2025-05-03 133408" src="https://github.com/user-attachments/assets/48149b65-5d00-419d-9bd4-50fee742361d" /></p><img width="526" height="269" alt="Screenshot 2025-05-03 133618" src="https://github.com/user-attachments/assets/d8479596-2923-4eda-8bee-bcaa786ae9e9" />
    
 Dalam kasus ini kita bisa login kehalaman admin dengan memasukan username dan password yang benar, untuk mencoba metode blind sql injection caranya seperti ini:
 1. Ketikan perintah ‘or’1’=’1 pada username dan password login
+<p align="left"><img width="492" height="453" alt="Screenshot 2025-05-03 135213" src="https://github.com/user-attachments/assets/adff37d2-f4b5-4666-bb59-8b089fe2e24e" /></p>
+<img width="526" height="269" alt="Screenshot 2025-05-03 133618" src="https://github.com/user-attachments/assets/ea08db6e-8706-4cef-b8b9-a4b4af1d139f" />
+
+
+Maka hasilnya kita tetap bisa login ke dalam website tersebut sebagai admin.
 
 
 
-
+# Cara pencegahan Sql Injection #
+1. Gunakan Prepared Statements / Parameterized Queries untuk memisahkan data dari 
+kode SQL sehingga input pengguna tidak diinterpretasikan sebagai perintah SQL 
+2. Implementasikan ORM (Object-Relational Mapping) 
+3. Validasi Input harus diterapkan tipe data (misalnya memastikan ID adalah angka) lalu 
+batas panjang input dan gunakan Validasi format menggunakan regex untuk 
+memastikan input sesuai pola yang diharapkan 
+4. Gunakan escape input pengguna dengan contoh mysql_real_escape_string 
+5. Implementasikan WAF (Web Application Firewall) yang dapat dapat mendeteksi dan 
+memblokir pola serangan SQL Injection 
